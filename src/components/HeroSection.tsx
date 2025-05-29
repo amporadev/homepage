@@ -29,9 +29,9 @@ const HeroSection = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-ocean-blue font-bold px-8 py-4 text-lg"
+            className="border-white text-ocean-blue bg-white hover:bg-gray-100 font-bold px-8 py-4 text-lg"
           >
-            See How It Works
+            Learn More
           </Button>
         </div>
       </div>
