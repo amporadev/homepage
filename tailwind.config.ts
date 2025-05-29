@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'exo': ['Exo 2', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Ampora brand colors
+				'ocean-blue': '#2A71FF',
+				'electric-purple': '#8A2BE2',
+			},
+			backgroundImage: {
+				'ampora-gradient': 'linear-gradient(135deg, #2A71FF 0%, #8A2BE2 100%)',
+				'ampora-gradient-dark': 'linear-gradient(135deg, #1e4fb8 0%, #5c1a7a 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +95,31 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'bounce-gentle': {
+					'0%, 100%': {
+						transform: 'translateY(0)',
+					},
+					'50%': {
+						transform: 'translateY(-10px)',
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in-up': 'fade-in-up 0.8s ease-out',
+				'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite',
 			}
 		}
 	},
