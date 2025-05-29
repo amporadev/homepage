@@ -22,14 +22,14 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Button 
             size="lg" 
-            className="bg-white text-ocean-blue font-bold hover:bg-gray-100 transition-colors px-8 py-4 text-lg"
+            className="bg-white text-ocean-blue font-bold hover:opacity-90 transition-opacity px-8 py-4 text-lg"
           >
-            Join Ampora
+            Get Started
           </Button>
           <Button 
             size="lg" 
             variant="outline" 
-            className="border-white text-ocean-blue bg-white hover:bg-gray-100 font-bold px-8 py-4 text-lg"
+            className="border-white text-ocean-blue bg-white hover:opacity-90 font-bold px-8 py-4 text-lg"
           >
             Learn More
           </Button>

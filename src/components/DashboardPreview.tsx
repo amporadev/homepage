@@ -13,31 +13,40 @@ const DashboardPreview = () => {
         </div>
         
         <div className="relative max-w-6xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-            <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=675&fit=crop&crop=center"
-                alt="Ampora Dashboard"
-                className="w-full h-full object-cover"
-              />
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden p-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 h-96">
+              {/* Real-time Earnings */}
+              <div className="bg-gradient-to-br from-ocean-blue to-electric-purple rounded-xl p-6 text-white flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4"></div>
+                  <h3 className="font-semibold">Real-time Earnings</h3>
+                </div>
+              </div>
+              
+              {/* Merch Builder */}
+              <div className="bg-gradient-to-br from-electric-purple to-ocean-blue rounded-xl p-6 text-white flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4"></div>
+                  <h3 className="font-semibold">Merch Builder</h3>
+                </div>
+              </div>
+              
+              {/* Campaign Launcher */}
+              <div className="bg-gradient-to-br from-ocean-blue to-electric-purple rounded-xl p-6 text-white flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4"></div>
+                  <h3 className="font-semibold">Campaign Launcher</h3>
+                </div>
+              </div>
+              
+              {/* Profile Editor */}
+              <div className="bg-gradient-to-br from-electric-purple to-ocean-blue rounded-xl p-6 text-white flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4"></div>
+                  <h3 className="font-semibold">Profile Editor</h3>
+                </div>
+              </div>
             </div>
-          </div>
-          
-          {/* Feature Labels */}
-          <div className="absolute top-4 left-4 bg-white rounded-lg p-3 shadow-lg">
-            <div className="text-sm font-semibold text-ocean-blue">Real-time Earnings</div>
-          </div>
-          
-          <div className="absolute top-4 right-4 bg-white rounded-lg p-3 shadow-lg">
-            <div className="text-sm font-semibold text-electric-purple">Merch Builder</div>
-          </div>
-          
-          <div className="absolute bottom-4 left-4 bg-white rounded-lg p-3 shadow-lg">
-            <div className="text-sm font-semibold text-ocean-blue">Campaign Launcher</div>
-          </div>
-          
-          <div className="absolute bottom-4 right-4 bg-white rounded-lg p-3 shadow-lg">
-            <div className="text-sm font-semibold text-electric-purple">Profile Editor</div>
           </div>
         </div>
       </div>
